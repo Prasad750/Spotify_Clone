@@ -8,56 +8,56 @@
   <body>
     <img src="Resources/Slogo.png" alt="Spotify logo" >
     <!-- Main section -->
-    <section>
+    <section  class="Main-container">
       <!-- side bar section -->
-      <section>
+      <section class="side-bar">
         <!-- sidebar content -->
-        <div>
-          <div>
+        <div class="side-bar-content">
+          <div  class="spotify-logo">
             <a href="#">
               <img src="Resources/Slogo.pn" alt="Spotify logo" />
             </a>
           </div>
-        </div>
-        <!-- home-search-library -->
-        <div>
+       
+         <!-- home-search-library -->
+        <div class="nav-item nav-line-seperation">
           <!-- home -->
-          <div>
+          <div class="logo-flex">
             <img src="Resources/home.png" alt="" />
             <p>Home</p>
           </div>
           <!-- search -->
-          <div>
+          <div class="logo-flex">
             <img src="Resources/Search.png" alt="search-icon" />
             <input type="text" placeholder="Search" />
           </div>
           <!-- library-->
-          <div>
+          <div class="logo-flex">
             <img src="Resources/library.png" alt="library-icon" />
             <p>Your Library</p>
           </div>
         </div>
         <!-- PlayList - song -eisode -->
-        <div>
+        <div  class="nav-item nav-line-seperation">
           <!-- create playList -->
-          <div>
+          <div class="logo-flex">
             <img src="Resources/plus.png" alt="add-Icon" />
             <p>Create Playlist</p>
           </div>
           <!-- Liked songs -->
-          <div>
+          <div class="logo-flex">
             <img src="Resources/littleheart.png" alt="like_Icon" />
             <p>Liked Songs</p>
           </div>
           <!-- Episodes -->
-          <div>
+          <div class="logo-flex">
             <img src="Resources/spotify-music-podcast.jpg" alt="podcast" />
             <p>Episodes</p>
           </div>
         </div>
         <!-- nav list -->
-        <div>
-          <ul>
+        <div class="side-list">
+          <ul  class="nav-line-seperation">
             <li>FAV</li>
             <li>Daily mix 1</li>
             <li>Discover weekly</li>
@@ -68,37 +68,43 @@
         </div>
         <!-- install -section -->
 
-        <div>
-          <div>
+        <div class="nav-line-seperation">
+          <div class="logo">
             <img src="Resources/Install.png" alt="install-icon" />
             <p>Install App</p>
           </div>
         </div>
+      </div>
       </section>
-
+<!-- --------------------------------------- -->
       <!-- main content area section -->
 
-      <section>
+      <section class="content-area">
         <div>
           <!-- profile header area -->
           <div>
-            <div>
-              <div>
+            <div class="profile-header">
+              <div class="main-arrow">
                 <i
-                  class=""
+                  class="fa-solid fa-chevron-left arrow"
+                  style="font-size: x-large; cursor: pointer; color: #999"
+                ></i>
+                <i
+                  class="fa-solid fa-chevron-right arrow"
                   style="font-size: x-large; cursor: pointer; color: #999"
                 ></i>
               </div>
             </div>
             <!-- main profile -->
-            <div>
+            <div class="main-profile">
               <!-- dropdown -->
-              <div>
+              <div class="dropdown">
                 <button
-                  class=""
+                  class="btn droupdown-toggle"
                   style="color: white"
                   type="button"
-                  id="ddp2"
+                  id="droupdownbutton2"
+                  data-bs-toggle="droupdown"
                   aria-expanded="false"
                 >
                   <img
@@ -108,41 +114,41 @@
                   />
                   angel
                 </button>
-                <ul>
-                  <li><a class="" href="#">profile</a></li>
-                  <li><a class="" href="#">Favorite Songs</a></li>
-                  <li><a class="" href="#">Settings</a></li>
-                  <li><a class="" href="#">Logout</a></li>
+                <ul class="dropdown-menu droupdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">profile</a></li>
+                  <li><a class="dropdown-item" href="#">Favorite Songs</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
               </div>
             </div>
           </div>
 
           <!-- PlayList n artist area -->
-          <div>
+          <div class="playlist-artist-area">
             <h1>Good Morning</h1>
             <!-- playlist  area-->
-            <div>
+            <div class="playlist-area">
               <!-- plylist -->
-              <div>
+              <div class="playlist">
                 <img src="Resources/bigHeart.png" alt="liked songs" />
                 <a style="text-decoration: none" href="#">
                   <p>Liked Songs</p>
                 </a>
               </div>
-              <div>
+              <div class="playlist">
                 <img src="Resources/Group 1.png" alt="Playlist-1" />
                 <a style="text-decoration: none" href="#">
                   <p>Neffex Playlist</p>
                 </a>
               </div>
-              <div>
+              <div class="playlist">
                 <img src="Resources/Anime.png" alt="Playlist-2" />
                 <a style="text-decoration: none" href="#">
                   <p>K/DA</p>
                 </a>
               </div>
-              <div>
+              <div class="playlist">
                 <img src="Resources/Marshmellow.png" alt="Playlist-3" />
                 <a style="text-decoration: none" href="#">
                   <p>Dance/Electronic mix</p>
@@ -150,87 +156,100 @@
               </div>
             </div>
             <!-- artist area -->
-            <div>
+          <div class="artist-area">
+            <div class="show-head">
               <h3>Shows you might like</h3>
               <p style="cursor: pointer">SEE ALL</p>
             </div>
             <!-- artists -->
-            <div>
-              <div>
-                <img src="Resources/Weekly.png" alt="show 1" />
+            <div class="show-you-might-like">
+              <div class="show">
+                <img src="Resources/Weekly.png" alt="show-1" />
                 <h4>Weekly motivation</h4>
                 <h5>Ben lene scot</h5>
               </div>
-              <div>
-                <img src="Resources/Meditation.png" alt="show 1" />
+              <div class="show">
+                <img src="Resources/Meditation.png" alt="show-1" />
                 <h4>Meditation Self</h4>
                 <h5>Ibn Hussain Aleen</h5>
               </div>
-              <div>
-                <img src="Resources/Words.png" alt="show 1" />
+              <div class="show">
+                <img src="Resources/Words.png" alt="show-1" />
                 <h4>Words Beyound Act ...</h4>
                 <h5>Samual Scott</h5>
               </div>
-              <div>
-                <img src="Resources/Alexa.png" alt="show 1" />
+              <div class="show">
+                <img src="Resources/Alexa.png" alt="show-1" />
                 <h4>The Alexa Show</h4>
                 <h5>Adriana Tom</h5>
               </div>
-              <div>
-                <img src="Resources/Atlantis.jpeg" alt="show 1" />
+              <div class="show">
+                <img src="Resources/Atlantis.jpeg" alt="show-1" />
                 <h4>Atlantis</h4>
                 <h5>Seafret</h5>
               </div>
-              <div>
-                <img src="Resources/Bones.jpeg" alt="show 1" />
+              <div class="show">
+                <img src="Resources/Bones.jpeg" alt="show-1" />
                 <h4>Bones</h4>
                 <h5>Imagine Dragon</h5>
               </div>
-              <div>
-                <img src="Resources/beliver.jpeg" alt="show 1" />
+              <div class="show">
+                <img src="Resources/beliver.jpeg" alt="show-1" />
                 <h4>Beliver</h4>
                 <h5>Imagine Dragon</h5>
               </div>
-              <div>
-                <img src="Resources/free.jpeg" alt="show 1" />
+              <div class="show">
+                <img src="Resources/free.jpeg" alt="show-1" />
                 <h4>FREE.k</h4>
                 <h5>Pitbull</h5>
               </div>
-              <div>
-                <img src="Resources/hard.jpeg" alt="show 1" />
+              <div class="show">
+                <img src="Resources/hard.jpeg" alt="show-1" />
                 <h4>Play Hard</h4>
                 <h5>Devid Guetta</h5>
               </div>
-              <div>
-                <img src="Resources/cheat.jpeg" alt="show 1" />
+              <div class="show">
+                <img src="Resources/cheat.jpeg" alt="show-1" />
                 <h4>Sex</h4>
                 <h5>Cheat Codes</h5>
               </div>
-              <div>
-                <img src="Resources/hentai.jpeg" alt="show 1" />
+              <div class="show">
+                <img src="Resources/hentai.jpeg" alt="show-1" />
                 <h4>Hentai Bitch</h4>
                 <h5>Kodam</h5>
               </div>
             </div>
           </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------- -->
       <!-- bottom music player section -->
-      <section>
-        <div>
-            <div>
-                <div>
+      <section class="music-player">
+        <div  class="song-bar">
+            <div class="song-info">
+                <div class="image-container">
                     <img src="Resources/DreamingOn.png" alt="">
                 </div>
-                <div>
-                    <p>Dreaming on</p>NEFFEX</p>
+                <div class="song-description">
+                    <p>Dreaming on</p>
+                    <p>NEFFEX</p>
                 </div>
             </div>
-            <div>
+            <div class="icons">
                 <img src="Resources/bx_bxs-heart.png" alt="">
             </div>
         </div>
-        <div>
+        <div class="progress-controller">
             <div class="control-buttons">
                 <i class="fas fa-random"></i>
                 <i class="fas fa-step-backward"></i>
