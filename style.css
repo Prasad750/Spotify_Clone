@@ -98,6 +98,7 @@ input::placeholder{
 
 .logo-flex{
     display: flex;
+    color: var(--light);
     justify-content: start;
     align-items: center;
     padding: 6px 0px 6px 20px;
@@ -298,6 +299,7 @@ color: #999;
 }
 .show-head>h3{
     font-weight: 700;
+    color: var(--light);
 }
 .shows-you-might-like{
     width: 90%;
@@ -331,6 +333,7 @@ color: #999;
 }
 .shows>h4{
     padding-top: 5px;
+    color: var(--light);
 }
 .shows>h5{
     color: var(--gray-text);
